@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoSite - Modelos</title>
+    <title>AutoWorld - Modelos de Carros</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="icones/favicon.ico">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>AutoSite</h1>
-            <p>O mundo dos automóveis</p>
+            <img src="imagens/logo-carros.png" alt="Logo AutoWorld" class="logo-img">
+            <div>
+                <h1>AutoWorld</h1>
+                <p>Explorando o universo automotivo</p>
+            </div>
         </div>
         <nav>
             <ul>
@@ -25,81 +28,374 @@
 
     <main>
         <section class="pagina-titulo">
-            <h1>Modelos de Carros</h1>
-            <p>Conheça diferentes categorias de automóveis</p>
+            <h1>Catálogo de Modelos</h1>
+            <p>Explore diferentes categorias de automóveis e suas características</p>
         </section>
 
         <section class="conteudo">
-            <div class="categorias">
-                <div class="categoria" id="esportivos">
-                    <h2>Carros Esportivos</h2>
-                    <img src="imagens/carro1.jpg" alt="Carro Esportivo">
-                    <p>Carros projetados para altas velocidades e performance. Normalmente possuem motores potentes e design aerodinâmico.</p>
-                    <h3>Exemplos:</h3>
-                    <ul>
-                        <li>Porsche 911</li>
-                        <li>Ferrari 488</li>
-                        <li>Lamborghini Huracán</li>
-                    </ul>
-                </div>
+            <!-- Navegação por categorias -->
+            <div class="categorias-nav">
+                <a href="#esportivos" class="categoria-link ativo">Esportivos</a>
+                <a href="#eletricos" class="categoria-link">Elétricos</a>
+                <a href="#classicos" class="categoria-link">Clássicos</a>
+                <a href="#suv" class="categoria-link">SUV</a>
+                <a href="#luxo" class="categoria-link">Luxo</a>
+            </div>
 
-                <div class="categoria" id="eletricos">
-                    <h2>Carros Elétricos</h2>
-                    <img src="imagens/carro2.jpg" alt="Carro Elétrico">
-                    <p>Movidos totalmente por energia elétrica, não emitem poluentes e são o futuro da mobilidade sustentável.</p>
-                    <h3>Exemplos:</h3>
-                    <ul>
-                        <li>Tesla Model S</li>
-                        <li>Nissan Leaf</li>
-                        <li>BMW i3</li>
-                    </ul>
-                </div>
+            <!-- Seção Carros Esportivos -->
+            <div class="categoria-section" id="esportivos">
+                <h2 class="categoria-titulo">🏎️ Carros Esportivos</h2>
+                <p class="categoria-descricao">Veículos projetados para alta performance, com motores potentes, design aerodinâmico e capacidade de atingir velocidades impressionantes.</p>
+                
+                <div class="modelos-grid">
+                    <div class="modelo-card">
+                        <div class="modelo-imagem">
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Porsche 911 GT3">
+                            <span class="modelo-tag">Top Performance</span>
+                        </div>
+                        <div class="modelo-info">
+                            <h3>Porsche 911 GT3</h3>
+                            <p class="modelo-descricao">O ícone dos esportivos alemães, combinando tradição e tecnologia de ponta. Motor traseiro e tração traseira pura.</p>
+                            <div class="modelo-especificacoes">
+                                <div class="espec-item">
+                                    <span class="espec-label">Motor:</span>
+                                    <span class="espec-valor">4.0L Flat-6</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Potência:</span>
+                                    <span class="espec-valor">510 cv</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">0-100 km/h:</span>
+                                    <span class="espec-valor">3.4s</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Vel. Máx:</span>
+                                    <span class="espec-valor">318 km/h</span>
+                                </div>
+                            </div>
+                            <div class="modelo-caracteristicas">
+                                <span class="caracteristica">🏁 Track Ready</span>
+                                <span class="caracteristica">🎵 Som Característico</span>
+                                <span class="caracteristica">⚙️ Manual Disponível</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="categoria" id="classicos">
-                    <h2>Carros Clássicos</h2>
-                    <img src="imagens/carro3.jpg" alt="Carro Clássico">
-                    <p>Veículos antigos que marcaram época e são valorizados por seu design, história e significado cultural.</p>
-                    <h3>Exemplos:</h3>
-                    <ul>
-                        <li>Ford Mustang 1965</li>
-                        <li>Volkswagen Fusca</li>
-                        <li>Chevrolet Impala 1967</li>
-                    </ul>
+                    <div class="modelo-card">
+                        <div class="modelo-imagem">
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ferrari 488 Pista">
+                            <span class="modelo-tag">Supercarro</span>
+                        </div>
+                        <div class="modelo-info">
+                            <h3>Ferrari 488 Pista</h3>
+                            <p class="modelo-descricao">A versão mais extrema da 488, com tecnologia de F1 e aerodinâmica agressiva para máxima performance em pista.</p>
+                            <div class="modelo-especificacoes">
+                                <div class="espec-item">
+                                    <span class="espec-label">Motor:</span>
+                                    <span class="espec-valor">3.9L V8 Twin-Turbo</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Potência:</span>
+                                    <span class="espec-valor">720 cv</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">0-100 km/h:</span>
+                                    <span class="espec-valor">2.85s</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Vel. Máx:</span>
+                                    <span class="espec-valor">340 km/h</span>
+                                </div>
+                            </div>
+                            <div class="modelo-caracteristicas">
+                                <span class="caracteristica">🇮🇹 Made in Italy</span>
+                                <span class="caracteristica">🏆 Tecnologia F1</span>
+                                <span class="caracteristica">💨 Aerodinâmica Ativa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modelo-card">
+                        <div class="modelo-imagem">
+                            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chevrolet Corvette C8">
+                            <span class="modelo-tag">Revolucionário</span>
+                        </div>
+                        <div class="modelo-info">
+                            <h3>Chevrolet Corvette C8</h3>
+                            <p class="modelo-descricao">Primeiro Corvette com motor central, oferecendo performance de supercarro a um preço acessível.</p>
+                            <div class="modelo-especificacoes">
+                                <div class="espec-item">
+                                    <span class="espec-label">Motor:</span>
+                                    <span class="espec-valor">6.2L V8 LT2</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Potência:</span>
+                                    <span class="espec-valor">495 cv</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">0-100 km/h:</span>
+                                    <span class="espec-valor">2.9s</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Vel. Máx:</span>
+                                    <span class="espec-valor">312 km/h</span>
+                                </div>
+                            </div>
+                            <div class="modelo-caracteristicas">
+                                <span class="caracteristica">🇺🇸 American Icon</span>
+                                <span class="caracteristica">🔧 Motor Central</span>
+                                <span class="caracteristica">💰 Best Value</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="comparativo">
-                <h2>Comparativo entre Categorias</h2>
-                <table>
-                    <tr>
-                        <th>Categoria</th>
-                        <th>Consumo</th>
-                        <th>Emissões</th>
-                        <th>Velocidade Máxima</th>
-                    </tr>
-                    <tr>
-                        <td>Esportivos</td>
-                        <td>8-15 L/100km</td>
-                        <td>Alta</td>
-                        <td>250-350 km/h</td>
-                    </tr>
-                    <tr>
-                        <td>Elétricos</td>
-                        <td>15-25 kWh/100km</td>
-                        <td>Zero</td>
-                        <td>180-250 km/h</td>
-                    </tr>
-                    <tr>
-                        <td>Clássicos</td>
-                        <td>10-20 L/100km</td>
-                        <td>Muito Alta</td>
-                        <td>120-200 km/h</td>
-                    </tr>
-                </table>
+            <!-- Seção Carros Elétricos -->
+            <div class="categoria-section" id="eletricos">
+                <h2 class="categoria-titulo">🔋 Carros Elétricos</h2>
+                <p class="categoria-descricao">O futuro da mobilidade sustentável, com zero emissões, aceleração instantânea e tecnologia avançada.</p>
+                
+                <div class="modelos-grid">
+                    <div class="modelo-card">
+                        <div class="modelo-imagem">
+                            <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tesla Model S Plaid">
+                            <span class="modelo-tag">Recordista</span>
+                        </div>
+                        <div class="modelo-info">
+                            <h3>Tesla Model S Plaid</h3>
+                            <p class="modelo-descricao">O sedã mais rápido do mundo, redefinindo os limites da aceleração em veículos de produção.</p>
+                            <div class="modelo-especificacoes">
+                                <div class="espec-item">
+                                    <span class="espec-label">Motores:</span>
+                                    <span class="espec-valor">3 Motores Elétricos</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Potência:</span>
+                                    <span class="espec-valor">1.020 cv</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">0-100 km/h:</span>
+                                    <span class="espec-valor">1.99s</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Autonomia:</span>
+                                    <span class="espec-valor">637 km</span>
+                                </div>
+                            </div>
+                            <div class="modelo-caracteristicas">
+                                <span class="caracteristica">⚡ Aceleração Brutal</span>
+                                <span class="caracteristica">🧠 Autopilot</span>
+                                <span class="caracteristica">🔄 Atualizações OTA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modelo-card">
+                        <div class="modelo-imagem">
+                            <img src="https://images.unsplash.com/photo-1621399640631-d0301cee48d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Porsche Taycan Turbo S">
+                            <span class="modelo-tag">Esportivo Elétrico</span>
+                        </div>
+                        <div class="modelo-info">
+                            <h3>Porsche Taycan Turbo S</h3>
+                            <p class="modelo-descricao">Primeiro Porsche totalmente elétrico, mantendo o DNA esportivo da marca com tecnologia de ponta.</p>
+                            <div class="modelo-especificacoes">
+                                <div class="espec-item">
+                                    <span class="espec-label">Motores:</span>
+                                    <span class="espec-valor">2 Motores Síncronos</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Potência:</span>
+                                    <span class="espec-valor">761 cv</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">0-100 km/h:</span>
+                                    <span class="espec-valor">2.8s</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Autonomia:</span>
+                                    <span class="espec-valor">440 km</span>
+                                </div>
+                            </div>
+                            <div class="modelo-caracteristicas">
+                                <span class="caracteristica">🏎️ DNA Porsche</span>
+                                <span class="caracteristica">🔋 800V Architecture</span>
+                                <span class="caracteristica">🎯 Precision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="voltar-home">
-                <a href="index.html" class="botao">Voltar para a página inicial</a>
+            <!-- Seção Carros Clássicos -->
+            <div class="categoria-section" id="classicos">
+                <h2 class="categoria-titulo">📜 Carros Clássicos</h2>
+                <p class="categoria-descricao">Veículos que marcaram época, com design atemporal e valor histórico que só aumenta com o tempo.</p>
+                
+                <div class="modelos-grid">
+                    <div class="modelo-card">
+                        <div class="modelo-imagem">
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ford Mustang 1967">
+                            <span class="modelo-tag">Ícone Americano</span>
+                        </div>
+                        <div class="modelo-info">
+                            <h3>Ford Mustang 1967</h3>
+                            <p class="modelo-descricao">O carro que criou a categoria "pony car" e se tornou símbolo da cultura automotiva americana.</p>
+                            <div class="modelo-especificacoes">
+                                <div class="espec-item">
+                                    <span class="espec-label">Motor:</span>
+                                    <span class="espec-valor">4.7L V8</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Potência:</span>
+                                    <span class="espec-valor">271 cv</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Produção:</span>
+                                    <span class="espec-valor">1964-1973</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Unidades:</span>
+                                    <span class="espec-valor">+2.8 milhões</span>
+                                </div>
+                            </div>
+                            <div class="modelo-caracteristicas">
+                                <span class="caracteristica">🎬 Estrela de Cinema</span>
+                                <span class="caracteristica">🇺🇸 Cultura Americana</span>
+                                <span class="caracteristica">📈 Valorização</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modelo-card">
+                        <div class="modelo-imagem">
+                            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Volkswagen Fusca">
+                            <span class="modelo-tag">Popular</span>
+                        </div>
+                        <div class="modelo-info">
+                            <h3>Volkswagen Fusca</h3>
+                            <p class="modelo-descricao">Um dos carros mais produzidos da história, símbolo de praticidade e design inovador.</p>
+                            <div class="modelo-especificacoes">
+                                <div class="espec-item">
+                                    <span class="espec-label">Motor:</span>
+                                    <span class="espec-valor">1.2L Boxer</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Potência:</span>
+                                    <span class="espec-valor">34 cv</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Produção:</span>
+                                    <span class="espec-valor">1938-2003</span>
+                                </div>
+                                <div class="espec-item">
+                                    <span class="espec-label">Unidades:</span>
+                                    <span class="espec-valor">21.5 milhões</span>
+                                </div>
+                            </div>
+                            <div class="modelo-caracteristicas">
+                                <span class="caracteristica">🌎 Mundialmente Amado</span>
+                                <span class="caracteristica">🔧 Fácil Manutenção</span>
+                                <span class="caracteristica">💰 Econômico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela Comparativa -->
+            <div class="tabela-comparativa">
+                <h2>📊 Comparativo entre Categorias</h2>
+                <div class="tabela-container">
+                    <table class="tabela-modelos">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Consumo Médio</th>
+                                <th>Emissões CO2</th>
+                                <th>Custo Manutenção</th>
+                                <th>Desempenho</th>
+                                <th>Conforto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="categoria-nome">Esportivos</td>
+                                <td>8-15 L/100km</td>
+                                <td class="alto">Alto</td>
+                                <td class="alto">Alto</td>
+                                <td class="excelente">Excelente</td>
+                                <td class="medio">Médio</td>
+                            </tr>
+                            <tr>
+                                <td class="categoria-nome">Elétricos</td>
+                                <td>15-25 kWh/100km</td>
+                                <td class="zero">Zero (local)</td>
+                                <td class="baixo">Baixo</td>
+                                <td class="muito-bom">Muito Bom</td>
+                                <td class="bom">Bom</td>
+                            </tr>
+                            <tr>
+                                <td class="categoria-nome">Clássicos</td>
+                                <td>10-20 L/100km</td>
+                                <td class="muito-alto">Muito Alto</td>
+                                <td class="medio">Médio-Alto</td>
+                                <td class="medio">Variável</td>
+                                <td class="baixo">Baixo</td>
+                            </tr>
+                            <tr>
+                                <td class="categoria-nome">SUV</td>
+                                <td>7-12 L/100km</td>
+                                <td class="alto">Alto</td>
+                                <td class="medio">Médio</td>
+                                <td class="bom">Bom</td>
+                                <td class="excelente">Excelente</td>
+                            </tr>
+                            <tr>
+                                <td class="categoria-nome">Luxo</td>
+                                <td>9-14 L/100km</td>
+                                <td class="alto">Alto</td>
+                                <td class="alto">Alto</td>
+                                <td class="bom">Bom</td>
+                                <td class="excelente">Excelente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Estatísticas -->
+            <div class="estatisticas">
+                <h2>📈 Curiosidades e Estatísticas</h2>
+                <div class="estatisticas-grid">
+                    <div class="estatistica-card">
+                        <h3>🚗 Produção Mundial</h3>
+                        <p class="estatistica-numero">78 milhões</p>
+                        <p>Carros produzidos em 2022</p>
+                    </div>
+                    <div class="estatistica-card">
+                        <h3>🔌 Elétricos em Crescimento</h3>
+                        <p class="estatistica-numero">14%</p>
+                        <p>Das vendas globais em 2022</p>
+                    </div>
+                    <div class="estatistica-card">
+                        <h3>🌍 Frota Mundial</h3>
+                        <p class="estatistica-numero">1.4 bilhões</p>
+                        <p>Veículos em circulação</p>
+                    </div>
+                    <div class="estatistica-card">
+                        <h3>📱 Conectividade</h3>
+                        <p class="estatistica-numero">95%</p>
+                        <p>Dos novos carros com conectividade</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navegação final -->
+            <div class="navegacao-final">
+                <a href="index.html" class="botao">🏠 Voltar para Início</a>
+                <a href="contato.html" class="botao secundario">📞 Fale Conosco</a>
             </div>
         </section>
     </main>
@@ -107,27 +403,84 @@
     <footer>
         <div class="rodape-conteudo">
             <div class="coluna">
-                <h3>AutoSite</h3>
-                <p>Trabalho Prático de HTML/CSS</p>
+                <img src="imagens/logo-carros.png" alt="Logo AutoWorld" class="logo-rodape">
+                <h3>AutoWorld</h3>
+                <p>Portal Educacional sobre Automóveis</p>
+                <p>Disciplina: Programação Web I</p>
             </div>
             <div class="coluna">
-                <h3>Links</h3>
+                <h3>Categorias</h3>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="modelos.html">Modelos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="modelos.html#esportivos">Carros Esportivos</a></li>
+                    <li><a href="modelos.html#eletricos">Carros Elétricos</a></li>
+                    <li><a href="modelos.html#classicos">Carros Clássicos</a></li>
+                    <li><a href="modelos.html#suv">SUVs</a></li>
                 </ul>
             </div>
             <div class="coluna">
-                <h3>Publicação</h3>
-                <p>Site publicado em:</p>
-                <p>ipca-a1.netlify.app</p>
+                <h3>Informações</h3>
+                <p><strong>Aluno:</strong> Rodrigo Passos</p>
+                <p><strong>Disciplina:</strong> Programação Web I</p>
+                <p><strong>Site:</strong> <a href="https://ipca-a35695.netlify.app" target="_blank">ipca-a35695.netlify.app</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/PnRodrigo/TP1" target="_blank">Repositório do Projeto</a></p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 AutoSite - Desenvolvido por Rodrigo Passos para Programação Web I</p>
+            <p>&copy; 2023 AutoWorld - Desenvolvido por Rodrigo Passos para Programação Web I</p>
+            <p>Publicado em: <a href="https://ipca-a35695.netlify.app" target="_blank">https://ipca-a35695.netlify.app</a></p>
         </div>
     </footer>
+
+    <script>
+        // Navegação suave entre categorias
+        document.querySelectorAll('.categoria-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove classe ativa de todos os links
+                document.querySelectorAll('.categoria-link').forEach(l => {
+                    l.classList.remove('ativo');
+                });
+                
+                // Adiciona classe ativa ao link clicado
+                this.classList.add('ativo');
+                
+                // Rolagem suave para a seção
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Atualizar link ativo baseado na rolagem
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.categoria-section');
+            const navLinks = document.querySelectorAll('.categoria-link');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    currentSection = '#' + section.id;
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('ativo');
+                if (link.getAttribute('href') === currentSection) {
+                    link.classList.add('ativo');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
