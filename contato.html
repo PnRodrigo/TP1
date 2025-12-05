@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoSite - Contato</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>AutoWorld - Contato</title>
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="icones/favicon.ico">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>AutoSite</h1>
-            <p>O mundo dos automóveis</p>
+            <img src="imagens/logo-carros.png" alt="Logo AutoWorld" class="logo-img">
+            <div>
+                <h1>AutoWorld</h1>
+                <p>Explorando o universo automotivo</p>
+            </div>
         </div>
         <nav>
             <ul>
@@ -26,32 +29,67 @@
     <main>
         <section class="pagina-titulo">
             <h1>Entre em Contato</h1>
-            <p>Tem dúvidas ou sugestões? Envie-nos uma mensagem!</p>
+            <p>Tem dúvidas, sugestões ou quer saber mais sobre o projeto?</p>
         </section>
 
         <section class="conteudo">
             <div class="contato-container">
                 <div class="contato-info">
-                    <h2>Informações de Contato</h2>
-                    <p><strong>Site Educacional:</strong> AutoSite</p>
-                    <p><strong>Finalidade:</strong> Trabalho Prático HTML/CSS</p>
-                    <p><strong>Publicado em:</strong> Netlify</p>
-                    <p><strong>URL:</strong> ipca-a1.netlify.app</p>
-                    
-                    <h3>Requisitos do Trabalho</h3>
-                    <ul>
-                        <li>Múltiplas páginas HTML ✓</li>
-                        <li>Organização em pastas ✓</li>
-                        <li>CSS externo ✓</li>
-                        <li>Publicação no Netlify ✓</li>
-                    </ul>
+                    <h2>Informações do Projeto</h2>
+                    <div class="info-card">
+                        <h3>📋 Sobre o Trabalho</h3>
+                        <p><strong>Projeto:</strong> AutoWorld - Site sobre Automóveis</p>
+                        <p><strong>Disciplina:</strong> Programação Web I</p>
+                        <p><strong>Finalidade:</strong> Trabalho Prático 1 (TP1)</p>
+                        <p><strong>Instituição:</strong> IPCA</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>👨‍💻 Desenvolvedor</h3>
+                        <p><strong>Nome:</strong> Rodrigo Passos</p>
+                        <p><strong>Aluno:</strong> IPCA</p>
+                        <p><strong>Disciplina:</strong> Programação Web I</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🔗 Links do Projeto</h3>
+                        <p><strong>Site Online:</strong> 
+                            <a href="https://ipca-a35695.netlify.app" target="_blank">
+                                https://ipca-a35695.netlify.app
+                            </a>
+                        </p>
+                        <p><strong>Repositório GitHub:</strong> 
+                            <a href="https://github.com/PnRodrigo/TP1" target="_blank">
+                                https://github.com/PnRodrigo/TP1
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>✅ Requisitos Cumpridos</h3>
+                        <ul>
+                            <li>✓ Múltiplas páginas HTML interligadas</li>
+                            <li>✓ Organização em pastas (css/, imagens/, icones/)</li>
+                            <li>✓ CSS externo aplicado</li>
+                            <li>✓ Design responsivo</li>
+                            <li>✓ Publicação no Netlify</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="contato-form">
-                    <h2>Formulário de Contato</h2>
-                    <form>
+                    <h2>Envie uma Mensagem</h2>
+                    <p>Utilize o formulário abaixo para entrar em contato sobre:</p>
+                    <ul>
+                        <li>Dúvidas sobre o conteúdo do site</li>
+                        <li>Sugestões de melhorias</li>
+                        <li>Informações adicionais sobre automóveis</li>
+                        <li>Questões técnicas sobre o projeto</li>
+                    </ul>
+                    
+                    <form id="form-contato">
                         <div class="form-grupo">
-                            <label for="nome">Nome:</label>
+                            <label for="nome">Nome Completo:</label>
                             <input type="text" id="nome" name="nome" required>
                         </div>
 
@@ -65,23 +103,40 @@
                             <select id="assunto" name="assunto">
                                 <option value="duvida">Dúvida sobre o site</option>
                                 <option value="sugestao">Sugestão de conteúdo</option>
+                                <option value="automoveis">Informação sobre automóveis</option>
                                 <option value="tecnico">Dúvida técnica</option>
-                                <option value="outro">Outro</option>
+                                <option value="outro">Outro assunto</option>
                             </select>
                         </div>
 
                         <div class="form-grupo">
                             <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+
+                        <div class="form-grupo">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Desejo receber atualizações sobre o site</label>
                         </div>
 
                         <button type="submit" class="botao">Enviar Mensagem</button>
+                        <button type="reset" class="botao secundario">Limpar Formulário</button>
                     </form>
+                </div>
+            </div>
+
+            <div class="info-adicional">
+                <h3>📞 Outras Formas de Contato</h3>
+                <div class="contato-alternativo">
+                    <p><strong>Email Institucional:</strong> Utilize o formulário acima</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/PnRodrigo" target="_blank">github.com/PnRodrigo</a></p>
+                    <p><strong>Projeto no Netlify:</strong> <a href="https://ipca-a35695.netlify.app" target="_blank">ipca-a35695.netlify.app</a></p>
                 </div>
             </div>
 
             <div class="voltar-home">
                 <a href="index.html" class="botao">Voltar para a página inicial</a>
+                <a href="sobre.html" class="botao secundario">Sobre o projeto</a>
             </div>
         </section>
     </main>
@@ -89,27 +144,40 @@
     <footer>
         <div class="rodape-conteudo">
             <div class="coluna">
-                <h3>AutoSite</h3>
-                <p>Trabalho Prático de HTML/CSS</p>
+                <img src="imagens/logo-carros.png" alt="Logo AutoWorld" class="logo-rodape">
+                <h3>AutoWorld</h3>
+                <p>Portal Educacional sobre Automóveis</p>
+                <p>Disciplina: Programação Web I</p>
             </div>
             <div class="coluna">
-                <h3>Links</h3>
+                <h3>Navegação</h3>
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="sobre.html">Sobre o Site</a></li>
                     <li><a href="modelos.html">Modelos</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
             <div class="coluna">
-                <h3>Publicação</h3>
-                <p>Site publicado em:</p>
-                <p>ipca-a1.netlify.app</p>
+                <h3>Informações</h3>
+                <p><strong>Aluno:</strong> Rodrigo Passos</p>
+                <p><strong>Disciplina:</strong> Programação Web I</p>
+                <p><strong>Site:</strong> <a href="https://ipca-a35695.netlify.app" target="_blank">ipca-a35695.netlify.app</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/PnRodrigo/TP1" target="_blank">Repositório do Projeto</a></p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 AutoSite - Trabalho Prático HTML/CSS</p>
+            <p>&copy; 2023 AutoWorld - Desenvolvido por Rodrigo Passos para Programação Web I</p>
+            <p>Publicado em: <a href="https://ipca-a35695.netlify.app" target="_blank">https://ipca-a35695.netlify.app</a></p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado pela sua mensagem! Em breve entrarei em contato.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
