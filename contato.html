@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSite - Contato</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="icones/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AutoSite</h1>
+            <p>O mundo dos automóveis</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-titulo">
+            <h1>Entre em Contato</h1>
+            <p>Tem dúvidas ou sugestões? Envie-nos uma mensagem!</p>
+        </section>
+
+        <section class="conteudo">
+            <div class="contato-container">
+                <div class="contato-info">
+                    <h2>Informações de Contato</h2>
+                    <p><strong>Site Educacional:</strong> AutoSite</p>
+                    <p><strong>Finalidade:</strong> Trabalho Prático HTML/CSS</p>
+                    <p><strong>Publicado em:</strong> Netlify</p>
+                    <p><strong>URL:</strong> ipca-a1.netlify.app</p>
+                    
+                    <h3>Requisitos do Trabalho</h3>
+                    <ul>
+                        <li>Múltiplas páginas HTML ✓</li>
+                        <li>Organização em pastas ✓</li>
+                        <li>CSS externo ✓</li>
+                        <li>Publicação no Netlify ✓</li>
+                    </ul>
+                </div>
+
+                <div class="contato-form">
+                    <h2>Formulário de Contato</h2>
+                    <form>
+                        <div class="form-grupo">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="assunto">Assunto:</label>
+                            <select id="assunto" name="assunto">
+                                <option value="duvida">Dúvida sobre o site</option>
+                                <option value="sugestao">Sugestão de conteúdo</option>
+                                <option value="tecnico">Dúvida técnica</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="botao">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="voltar-home">
+                <a href="index.html" class="botao">Voltar para a página inicial</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div class="coluna">
+                <h3>AutoSite</h3>
+                <p>Trabalho Prático de HTML/CSS</p>
+            </div>
+            <div class="coluna">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <h3>Publicação</h3>
+                <p>Site publicado em:</p>
+                <p>ipca-a1.netlify.app</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 AutoSite - Trabalho Prático HTML/CSS</p>
+        </div>
+    </footer>
+</body>
+</html>
